@@ -1,0 +1,38 @@
+杀死tomcat进程
+netstat -aon|findstr "80"
+
+taskkill /f /pid xxxx
+soffice -headless -accept="socket,host=127.0.0.1,port=8100;urp;" -nofirststartwizard
+2029069
+solr的启动、停止、查看命令： 
+1. 启动：bin\solr.cmd start 
+2. 停止：bin\solr.cmd stop 或bin\solr.cmd stop -all 
+3. 查看：bin\solr.cmd status
+redis-server.exe redis.windows.conf
+select id from (select * from sysorganization order by parentId, id) so,(select @pv\\:="+id+") pv where find_in_set(parentId, @pv) > 0 and  @pv\\:= concat(@pv, ',', id)
+
+tzzx@2017
+zl906356464@gmail.com
+a78c53fd9cfad07c1d123bd3f93cad4f  小程序密码
+
+zl906356464@gmail.com
+
+
+select *  from list_robot_project_character_info lrpci where lrpci.id in(
+select lrpci.id  from list_robot_project_character_info lrpci where  INSTR(
+(select GROUP_CONCAT(idd) from(
+select SUBSTRING_INDEX(ids,",",cou-1) idd from 
+(SELECT GROUP_CONCAT(lrpci.id) as ids,count(*) as cou ,lrpci.list_robot_project_character_id as charid,lrpci.description as description 
+from list_robot_project_character_info lrpci  GROUP BY lrpci.description ,lrpci.list_robot_project_character_id HAVING cou >2) 
+ result1) result2),lrpci.id)
+)
+
+
+
+
+
+
+
+                     
+
+
