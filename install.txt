@@ -10,7 +10,6 @@ soffice -headless -accept="socket,host=127.0.0.1,port=8100;urp;" -nofirststartwi
 2. 停止：bin\solr.cmd stop 或bin\solr.cmd stop -all 
 3. 查看：bin\solr.cmd status
 ************************************************
-redis-server.exe redis.windows.conf
 select id from (select * from sysorganization order by parentId, id) so,(select @pv\\:="+id+") pv where find_in_set(parentId, @pv) > 0 and  @pv\\:= concat(@pv, ',', id)
 
 tzzx@2017
